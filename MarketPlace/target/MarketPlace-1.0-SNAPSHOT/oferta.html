@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>MarketPlace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+    
+    <!-- container para mantener la barra de encima si se modificia no se desconfigura-->
+    
+    <div class="container" style="background: rgb(34, 199, 168)" id="head" >
+        <!--division en la cantidad de col -->
+        <div class="row">
+            
+            <div class="col-sm">
+                <div class="d-flex">
+
+                    <div class="btn-group">
+                        <button type="button" class="btn" style="background: honeydew;">Menú</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            data-reference="parent">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                            
+                            <a class="dropdown-item" href="#">Historial de compras</a>
+                            <a class="dropdown-item" href="hacerTransferencia.html">Hacer Transferencia</a>
+                            <a class="dropdown-item" href="recibeTransferencia.html">Recibir Transferencia</a>
+                            <a class="dropdown-item" href="#">Editar perfil</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">cerrar sesión</a>
+                            <a class="dropdown-item" href="#">preguntas frecuentes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="buscar"  placeholder="¿Que quieres?" >
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" onclick="filtro()" type="button">Buscar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+
+                <div class="d-flex">
+
+                    <div class="btn-group">
+
+                        
+                            <button type="button" class="btn"
+                                    style="background-image: url('https://cdn0.iconfinder.com/data/icons/shopping-icons-5/100/Cart-512.png');background-repeat: no-repeat; width:51px; height:39px; background-size: 90%;" onclick="window.location='carrito.html'"></button>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </br>
+        <!--otro container para ver las cartas de los productos -->
+        <div class="container" id="head2">
+        <div class="row" id="pro">
+            
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+         <script src="js/jsProducto.js"></script>
+         <script src="js/jsCarrito.js"></script>
+         <script src="js/cookie.js"></script>
+</html>

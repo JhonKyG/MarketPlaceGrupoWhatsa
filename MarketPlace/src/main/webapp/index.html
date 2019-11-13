@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="css/StyleUsuario.css">
+  
+</head>
+<body>
+  <div class="form-structor">
+	<div class="signup">
+		<h2 class="form-title" id="signup"><span>or</span>Registrate</h2>
+		<div class="form-holder">
+                    <input type="text" id="id" class="input" placeholder="Id" />
+                    <input type="email" id="nombre" class="input" placeholder="Nombre" />
+                    <input type="text" id="cedula" class="input" placeholder="Cedula" />
+                    <input type="text" id="correo" class="input" placeholder="Email" />
+                    <input type="text" id="celular" class="input" placeholder="Celular" />
+                    <input type="password" id="contrasena" class="input" placeholder="Password" />
+		</div>
+                <button class="submit-btn" onclick="enviar()">Registrarse</button>
+	</div>
+	<div class="login slide-up">
+		<div class="center">
+			<h2 class="form-title" id="login"><span>or</span>Iniciar Sesion</h2>
+			<div class="form-holder">
+                            <input type="text" class="input" id="user" placeholder="Cedula" />
+                            <input type="password" class="input" id="psw" placeholder="Password" />
+			</div>
+                        <button class="submit-btn" onclick="filtro()">Entrar</button>
+                        
+                        <a href="loginEmpresa.html" id="a" >Si eres empesario ¡Click aqui!</a>
+                        
+		</div>
+            
+	</div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/sha256.min.js"></script>
+    <script src="js/jsUsuario.js"></script>
+    <script src="js/cookie.js"></script>
+</html>
