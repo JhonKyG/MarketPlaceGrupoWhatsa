@@ -1,0 +1,101 @@
+
+    <head>
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/formCliente.css">
+
+        <title>Llenado de Carrito</title>
+
+        <style>
+
+            .login {
+              border: 1px solid black;
+              margin-top: 50px;
+              margin-right: 30px;
+              margin-left: 30px;
+            }
+
+            table {
+              border-collapse: collapse;
+              border-collapse: collapse;
+              width: 60%;
+            }
+
+            table, td, th {
+              border: 1px solid black;
+            }  
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class='login'>
+
+            <center>
+
+                <h2>Llenado de Carrito</h2>
+                <hr>
+
+                <p id="demo">0</p>
+                
+                <br>
+
+                Ingrese el Id Del producto:
+                <input placeholder='Producto' type='text' id="idproducto">
+
+            </center>
+
+            <br>
+
+            <center>
+            
+            <button class='btn' type='button' id='menos' onclick='restar()'>-</button>
+            <p id = "cant">0</p>
+            <button class='btn' type='button' id='mas' onclick=' sumar()'>+</button>
+            <button class="btn btn-outline-secondary" onclick="sumar()" type="button">Buscar</button>
+            
+            <br><br>
+            
+            <input class='animated' id='boton1' type='submit' value='Agregar al Carrito' onclick="funcionPrincipal()" >
+            <!--<button id='boton1'>Click me</button>-->
+            
+            <br>
+            
+            </center>
+            
+            <br>
+            
+            <center>
+            <div id="table">
+                <table class="table" id="tablita">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
+                        <tr>
+                            <th>1001</th>
+                            <th>JHON</th>
+                            <th>9999999</th>
+                            <th>1</th>
+                        </tr>
+                </table>
+            </div>
+            </center>
+                
+            <br>
+            <center><input class='animated' type='submit' value='Comprar' onclick="enviar()"></center>
+            <br>
+
+        </div>   
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jsCarrito.js"></script>
+    <script src="js/jsProducto.js"></script>
+    <script src="js/cookie.js"></script>
+</html>

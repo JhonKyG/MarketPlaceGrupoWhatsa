@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leer QR</title>
+    
+	
+  </head>
+  <body>
+      <h3 id="saldo">Su saldo es: </h3>
+    <input type="text" id="monto" class="input" placeholder="Monto a enviar" />
+    <button class="submit-btn" onclick="actualizarSaldo()">Enviar Dinero</button>
+    <video id="preview"></video>
+    <button class="submit-btn" onclick="verificar()">Verificar</button>
+
+ </body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>
+    <script src="js/jsHacerTransferencia.js" ></script>
+    <script src="js/cookie.js" ></script>
+</html>
