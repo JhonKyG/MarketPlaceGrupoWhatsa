@@ -28,6 +28,7 @@ var contQR;
 });
 
 }
+/*
       
         
         let scanner = new Instascan.Scanner(
@@ -48,7 +49,9 @@ var contQR;
                 console.error("error!");
             }
         });
-        
+       
+*/
+
 function verificar(){
  
  console.log(contQR);

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            .login {
+              border: 1px solid black;
+              margin-top: 50px;
+              margin-right: 30px;
+              margin-left: 30px;
+            }
+
+            table {
+              border-collapse: collapse;
+              border-collapse: collapse;
+              width: 60%;
+            }
+
+            table, td, th {
+              border: 1px solid black;
+            }  
+
+        </style>
+    </head>
+    <body>
+
+        <div class='login'>
+
+            <center>
+
+                <h2>Factura de las Compras realizadas</h2>
+                <hr>               
+                <br>
+
+                <p>Compras Realizadas anteriormente:</p>
+
+            </center>
+
+            <br>
+            <br>
+            <br>
+            
+            <center>
+            <div id="table">
+                <table class="table" id="tablita">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
+                        <tr>
+                            <th>1111</th>
+                            <th>Pizza</th>
+                            <th>30000</th>
+                            <th>100</th>
+                        </tr>
+                </table>
+            </div>
+                
+            <br>
+            <button class='btn' type='button' id='Comprar' onclick='comprar()'>Comprar</button>
+            <p id = "total">0</p>
+            <br>
+
+            </center>
+
+            
+        </div>   
+
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>
+    <script src="js/jsfactura.js" ></script>
+    
+</html>

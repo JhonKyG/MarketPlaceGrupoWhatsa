@@ -17,10 +17,9 @@ function funcionPrincipal(){
         success: function( result ) {
           console.log(result);
           var obj=JSON.parse(result);
-          var cantidad=$("#cantidad").val();
+          var cantidad=$("#cant").val();
           var s = "<tr> <td>"+obj[i].Id+"</td><td>"+obj[i].Nombre+"</td><td>"+obj[i].Precio+"</td><td>"+cantidad+"</td><tr>";
           $("#tablita").append(s);
-          
           
         }
   });
@@ -28,13 +27,15 @@ function funcionPrincipal(){
   
 
 function sumar(){   
-    var c = document.getElementById()('cant').value;
-    c = parseInt(c)+1;
-    document.getElementById("#cant").innerHTML = 2;
+    var cantidad=$("#cant").val();
+    c = parseInt(cantidad)+1;
+    document.getElementById("#cant").innerHTML = c;
     
 }
 
 function restar(){
-        document.getElementById("#cant").innerHTML = 2;    
+    var cantidad=$("#cant").val();
+    c = parseInt(cantidad)-1;
+    document.getElementById("#cant").innerHTML = c;    
 }
 
