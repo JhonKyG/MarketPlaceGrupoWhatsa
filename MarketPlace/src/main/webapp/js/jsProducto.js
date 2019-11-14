@@ -1,6 +1,6 @@
 $(document).ready(function(){
    mostrar(); 
-   //mostrarUsuario();
+   
 });
 
 
@@ -13,20 +13,20 @@ function enviar(){
  var nombre=$("#nombre").val();
  var url=$("#url").val();
  
- //var password = 'hola';
+
  
- //var hash=CryptoJS.SHA256("hola");
- //var hash = CryptoJS.SHA256("Message");
- //console.log(hash);
 
 
 
- console.log(idProducto);
- console.log(precio);
- console.log(categoria);
- console.log(descripcion);
- console.log(nombre);
- console.log(url);
+
+
+
+
+
+
+
+
+
  
 $.ajax({
   url: "ServletProducto",
@@ -42,11 +42,11 @@ $.ajax({
   success: function( result ) {
     console.log(result);
     var obj=JSON.parse(result);
-    /*for(i=0;i<obj.length;i++){
-        console.log(obj[i].nombre);
-        $("#miTabla").append("<tr><td>"+obj[i].id+"</td><td>"+obj[i].nombre+"</td>\n\
-        <td>"+obj[i].apellido+"</td><td>"+obj[i].celular+"</td><td>"+obj[i].correo+"</td>\n\</tr>");
-    }*/
+
+   
+        
+
+   
     
   }
 });
@@ -61,17 +61,17 @@ function mostrar(){
  
 $.ajax({
   url: "ServletProducto",
- // beforeSend:function(){
- //    $("#loading").show();
- //    $("#resultados").hide();
- // },
+
+
+
+
 
   success: function( result ) {
-    //console.log(result);
+
     var obj=JSON.parse(result);
-    //console.log(obj);
+
     for(i=0;i<obj.length;i++){
-        //console.log(obj[i].nombre);
+
         $("#pro").append('<div class="col-sm">\
                 <div class="card" style="width: 18rem;">\
                     <div style="width: 100%; text-align: center;">\
@@ -104,7 +104,7 @@ function filtro(){
 
 
  
- console.log(nombre);
+
  
  
  $.ajax({
@@ -117,7 +117,7 @@ function filtro(){
     var obj=JSON.parse(result);
     console.log(obj);
     for(i=0;i<obj.length;i++){
-        //console.log(obj[i].nombre);
+
         $("#pro").empty();
         $("#pro").append('<div class="col-sm">\
                 <div class="card" style="width: 18rem;">\
@@ -155,11 +155,11 @@ $.ajax({
  
 
   success: function( result ) {
-    //console.log(result);
+
     var obj=JSON.parse(result);
-    //console.log(obj);
+
     for(i=0;i<obj.length;i++){
-        //console.log(obj[i].nombre);
+
         var li="";
           li = '<li id="li'+i+'">\
                 <div class="row" style="background-color: white; display: flex; justify-content: center; align-items: center;\
@@ -196,9 +196,9 @@ $.ajax({
   success: function( result ) {
     console.log(result);
     var obj=JSON.parse(result);
-    //console.log(obj);
+
     for(i=0;i<obj.length;i++){
-        //console.log(obj[i].nombre);
+
         $("#idUs").append(obj[i].id);
         $("#nombreUs").append(obj[i].nombre);
     }
