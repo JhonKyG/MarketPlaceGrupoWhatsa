@@ -18,7 +18,6 @@ var contQR;
     var obj=JSON.parse(result);
     console.log(obj);
     for(i=0;i<obj.length;i++){
-        //console.log(obj[i].nombre);
         $("#saldo").append(obj[i].saldo);        
       }
         
