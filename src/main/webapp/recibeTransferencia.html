@@ -1,0 +1,31 @@
+<html>
+    <head>
+		<title>Generar QR</title>
+    </head>
+    <body>
+        
+        <button onClick="createQrCode()">Generar Codigo QR</button>
+        <div id="qrcode"></div>
+    </body>
+	
+    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script src="js/cookie.js"></script>
+
+    <script>
+    
+    function createQrCode()
+    {
+        var userInput = getCookie('cookieUsuario');
+
+        var qrcode = new QRCode("qrcode", {
+            text: userInput,
+            width: 256,
+            height: 256,
+            colorDark: "black",
+            colorLight: "white",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    }
+    
+    </script>
+</html>
