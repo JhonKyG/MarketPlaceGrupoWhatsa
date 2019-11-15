@@ -13,6 +13,21 @@ var contQR;
   data: {
     sal:sal
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   success: function( result ) {
     console.log(result);
     var obj=JSON.parse(result);
